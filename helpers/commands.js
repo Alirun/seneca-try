@@ -1,3 +1,4 @@
 module.exports = {
-  FETCH: 'FETCH'
+  FETCH: 'FETCH',
+  LOG: 'LOG'
 }

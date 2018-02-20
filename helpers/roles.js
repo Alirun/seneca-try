@@ -1,3 +1,4 @@
 module.exports = {
-  TWEETS: 'TWEETS'
+  TWEETS: 'TWEETS',
+  API_SERVER: 'API_SERVER'
 }

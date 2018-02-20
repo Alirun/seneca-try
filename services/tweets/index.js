@@ -1,5 +1,5 @@
-const { TWEETS } = require('../helpers/roles')
-const { FETCH } = require('../helpers/commands')
+const { TWEETS } = require('../../helpers/roles')
+const { FETCH } = require('../../helpers/commands')
 
 module.exports = function() {
   this.add({
@@ -19,7 +19,7 @@ module.exports = function() {
     reply(null, mockTweets)
   })
 
-  this.add('init:Tweets', function (msg, respond) {
+  this.add('init:tweets', function (msg, respond) {
     console.log('Initializing Tweets service')
     respond()
   })

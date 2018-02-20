@@ -1,7 +1,9 @@
 const seneca = require('seneca')()
 
-const Tweets = require('./services/Tweets')
-const Api = require('./services/api-server/index')
+const TweetsService = require('./services/tweets')
+const ApiServerService = require('./services/api-server')
+const LoggerService = require('./services/logger')
 
-seneca.use(Tweets)
-seneca.use(Api)
+seneca.use(TweetsService)
+seneca.use(ApiServerService)
+seneca.use(LoggerService)
