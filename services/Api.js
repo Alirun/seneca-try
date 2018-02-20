@@ -2,12 +2,16 @@ const Express = require('express')
 
 const { TWEETS } = require('../helpers/roles')
 const { FETCH } = require('../helpers/commands')
+const { build } = require('../helpers/actions')
 
 const app = Express()
 
+// actions
+const fetchTweets = build(TWEETS, FETCH)
+
 module.exports = function() {
   app.get('/tweets', (req, res, next) => {
-    this.act({ role: TWEETS, cmd: FETCH }, (err, reply) => {
+    this.act(fetchTweets, (err, reply) => {
       res.send(reply)
     })
   })
