@@ -1,8 +1,8 @@
 const Express = require('express')
 
-const { TWEETS } = require('../helpers/roles')
-const { FETCH } = require('../helpers/commands')
-const { build } = require('../helpers/actions')
+const { TWEETS } = require('../../helpers/roles')
+const { FETCH } = require('../../helpers/commands')
+const { build } = require('../../helpers/actions')
 
 const app = Express()
 
